@@ -27,14 +27,14 @@
 .main-content {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 10rem var(--gap);
+  padding: 6rem var(--gap);
 }
 
 .section {
   min-height: 100vh;
 }
 
-.menu-space{
+.menu-space {
   height: 6.5rem;
   background-color: var(--primary-color);
 }
@@ -58,8 +58,7 @@ body .full-width {
   color: #000000;
 }
 
-
-.intro-content{
+.intro-content {
   position: relative;
   top: -8rem;
   display: grid;
@@ -69,28 +68,29 @@ body .full-width {
   min-height: 100vh;
 }
 
-.intro-text-content, .intro-img{
+.intro-text-content,
+.intro-img {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
 }
 
-.intro-text-content h2{
+.intro-text-content h2 {
   font-size: 8rem;
   margin-bottom: 5rem;
   line-height: 1.1;
 }
 
-.intro-text-content p{
+.intro-text-content p {
   font-size: 2rem;
 }
 
-.intro-img img{
+.intro-img img {
   max-width: 100%;
   height: auto;
 }
 
-.top3-content{
+.top3-content {
   max-width: 63rem;
   display: flex;
   flex-direction: column;
@@ -100,16 +100,16 @@ body .full-width {
   text-align: center;
 }
 
-.top3-content h2{
+.top3-content h2 {
   padding: 3rem;
 }
 
-.top3-content p{
+.top3-content p {
   font-size: 1.5em;
   margin-bottom: 5rem;
 }
 
-.grid-one-content{
+.grid-one-content {
   padding: 2.3rem;
   display: flex;
   flex-flow: column wrap;
@@ -117,28 +117,27 @@ body .full-width {
   min-height: 100vh;
 }
 
-
-.grid-description{
+.grid-description {
   font-size: 1.3em;
   margin-bottom: 5rem;
 }
 
-.grid{
+.grid {
   padding-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   counter-reset: grid-counter;
 }
 
-.grid h3{
+.grid h3 {
   font-size: 3rem;
   position: relative;
   padding-left: 7rem;
   padding-bottom: 3rem;
 }
 
-.grid h3::before{
+.grid h3::before {
   counter-increment: grid-counter;
   content: counter(grid-counter);
   position: absolute;
@@ -147,35 +146,106 @@ body .full-width {
   top: -3rem;
   left: -1rem;
   transform: rotate(5deg);
-
 }
 
-.grid p{
+.grid p {
   font-size: 1.5em;
 }
 
-.gallery-img{
+.gallery-img {
   width: 100%;
   max-width: 36rem;
   max-height: 36rem;
   overflow: hidden;
 }
 
-.gallery-img img{
+.gallery-img img {
   transition: all 300ms ease-in-out;
 }
 
-.gallery-img img:hover{
+.gallery-img img:hover {
   transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
 
-.grid-main-heading{
+.grid-main-heading {
   padding-top: 6rem;
   text-transform: uppercase;
 }
 
-table{
+table {
   min-width: 360px;
   width: 100%;
   border-collapse: collapse;
+}
+
+.intro-text-content h2 {
+  font-size: 8rem;
+  margin-bottom: 5rem;
+  line-height: 1.1;
+}
+
+.contact-form {
+  grid-column: span 2;
+}
+
+.contact-form .form-grid {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.form-group {
+  flex: 1 1 320px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  border: none;
+  background: var(--white-color);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  font-size: 2rem;
+  outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 10px 2px var(--secondary-color);
+}
+
+.form-group button {
+  border: 0.5rem solid var(--white-color);
+  background: none;
+  color: var(--white-color);
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+  background: var(--white-color);
+  color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+  font-size: 2rem;
+  color: var(--light-gray);
+}
+
+.form-grid legend {
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.copy{
+  color: var(--secondary-color);
 }

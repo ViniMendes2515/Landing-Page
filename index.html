@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Landing Page</title>
   </head>
-  <body class = "full-width">
+  <body class="full-width">
     <header class="white-bg">
       <div class="main-content menu-content">
         <h1>
@@ -21,7 +21,7 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#grid-two">Grid-Two</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -31,7 +31,7 @@
     <section id="home" class="intro main-bg section">
       <div class="main-content intro-content">
         <div class="intro-text-content">
-          <h2 style="text-transform: none;"  >January brings us Firefox 85</h2>
+          <h2 style="text-transform: none">January brings us Firefox 85</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
             cumque consectetur earum esse, vitae impedit magni officia
@@ -166,16 +166,24 @@
     <section id="pricing" class="white-bg section">
       <div class="main-content top3-content">
         <h2>Pricing</h2>
-        <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some
-          surprises at the machine’s performance. This post details some background information on the experience of
-          porting Firefox to run natively on these CPUs.</p>
-        <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to
-          know about the new architecture, before moving on to the concept of Universal Binaries.</p>
-  
+        <p>
+          The release of Apple Silicon-based Macs at the end of last year
+          generated a flurry of news coverage and some surprises at the
+          machine’s performance. This post details some background information
+          on the experience of porting Firefox to run natively on these CPUs.
+        </p>
+        <p>
+          We’ll start with some background on the Mac transition and give an
+          overview of Firefox internals that needed to know about the new
+          architecture, before moving on to the concept of Universal Binaries.
+        </p>
+
         <div class="responsive-table">
           <table>
-            <caption>Pricing table</caption>
-  
+            <caption>
+              Pricing table
+            </caption>
+
             <thead>
               <tr>
                 <th>Title 1</th>
@@ -185,7 +193,7 @@
                 <th>Title 5</th>
               </tr>
             </thead>
-  
+
             <tbody>
               <tr>
                 <td>Content 1</td>
@@ -209,7 +217,7 @@
                 <td>Content 3</td>
               </tr>
             </tbody>
-  
+
             <tfoot>
               <tr>
                 <td></td>
@@ -223,5 +231,59 @@
         </div>
       </div>
     </section>
+    <section id="contact" class="intro main-bg section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2 id="title-form" style="padding-top:15rem">January brings us Firefox 85</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            cumque consectetur earum esse, vitae impedit magni officia
+            consequuntur perferendis ducimus a hic aliquid doloribus dolor! Quis
+            dicta vel blanditiis quibusdam?
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="assets/img/undraw_secure_login_pdn4.svg" alt="contact-us" />
+        </div>
+        <div class="contact-form">
+          <fieldset class = "form-grid">
+            <legend>Contact Me</legend>
+
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" placeholder="Your First name"/>
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Your Last name"/>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Your email"/>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit">Send Message</button>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer white-bg">
+      <p><a href="https://github.com/ViniMendes2515" target="_blank"><span class = "copy">&copy;</span> Feito por Vinicius Mendes</a></p>
+    </footer>
   </body>
 </html>
